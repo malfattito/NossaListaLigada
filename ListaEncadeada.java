@@ -19,6 +19,44 @@ public class ListaEncadeada
 		
 	}
 	
+	
+	
+	public String delete(int posicao) {
+		int tamanhoLista = tamanhoLista();
+		if (posicao < 0 || posicao > tamanhoLista)
+		{
+			
+			return null;
+		}
+		if (posicao == 0)
+		{
+			No retorno=this.cabeca;
+			this.cabeca = cabeca.prox;
+			
+			return retorno.dado;
+		}
+		//Aponta para o primeiro elemento da lista
+		
+		No anterior = cabeca;
+		No retorno;
+		//Percorre a lista ate o elemento anterior a posicao de insercao
+		for (int pos = 0; pos < posicao - 1; pos++, anterior = anterior.prox);
+		
+		//Insere o novo elemento na lista
+		//verifica se a insercao e no rabo
+		if (anterior.prox == null)
+		{
+			
+			return null;
+		}
+		retorno=anterior.prox;
+		anterior.prox=(anterior.prox).prox;
+		return retorno.dado;
+		
+	
+		
+	}
+	
 	//Insercao de um dado em qq posicao da lista
 	void insere(int pos, String dado)
 	{
