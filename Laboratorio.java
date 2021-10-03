@@ -18,6 +18,13 @@ public class Laboratorio
 		lista.insere(8,"Dado 7");
 		lista.insere("Dado 8");
 		
+		
+		System.out.println(lista.delete(2));
+		System.out.println(lista.delete(1));
+		System.out.println(lista.delete(5));
+		System.out.println(lista.delete(6));
+		
+		
 		lista.imprimeLista();
 		
 		System.out.println(lista.tamanhoLista());
