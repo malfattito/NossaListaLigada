@@ -6,7 +6,20 @@ public class Laboratorio
 	{
 		ListaEncadeada lista = new ListaEncadeada();
 		
-		lista.insere("Dado 1");
+		Pilha pilha = new Pilha();
+		
+		pilha.empilha("Dado 1");
+		pilha.empilha("Dado 2");
+		pilha.empilha("Dado 3");
+		pilha.empilha("Dado 4");
+		pilha.empilha("Dado 5");
+		
+		pilha.desempilha();
+		pilha.desempilha();
+		
+		pilha.imprimePilha();
+		
+		/*lista.insere("Dado 1");
 		lista.insere("Dado 2");
 		lista.insere("Dado 3");
 		lista.insere("Dado 4");
@@ -27,7 +40,9 @@ public class Laboratorio
 		
 		lista.imprimeLista();
 		
-		System.out.println(lista.tamanhoLista());
+		System.out.println(lista.tamanhoLista());*/
+		
+		
 		
 		
 	}

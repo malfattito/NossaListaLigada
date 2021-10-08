@@ -51,10 +51,16 @@ public class ListaEncadeada
 		}
 		retorno=anterior.prox;
 		anterior.prox=(anterior.prox).prox;
-		return retorno.dado;
-		
+		return retorno.dado;	
+	}
 	
+	String buscaElemento(int pos)
+	{
+		No temp = cabeca;
 		
+		for (int posicao = 0; posicao < pos ; posicao++, temp = temp.prox);
+		
+		return temp.dado;
 	}
 	
 	//Insercao de um dado em qq posicao da lista
