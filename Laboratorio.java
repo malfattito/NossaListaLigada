@@ -6,18 +6,30 @@ public class Laboratorio
 	{
 		ListaEncadeada lista = new ListaEncadeada();
 		
-		Pilha pilha = new Pilha();
+//		Pilha pilha = new Pilha();
+//		
+//		pilha.empilha("Dado 1");
+//		pilha.empilha("Dado 2");
+//		pilha.empilha("Dado 3");
+//		pilha.empilha("Dado 4");
+//		pilha.empilha("Dado 5");
+//		
+//		pilha.desempilha();
+//		pilha.desempilha();
+//		
+//		pilha.imprimePilha();
 		
-		pilha.empilha("Dado 1");
-		pilha.empilha("Dado 2");
-		pilha.empilha("Dado 3");
-		pilha.empilha("Dado 4");
-		pilha.empilha("Dado 5");
+		Fila fila = new Fila();
+		fila.insere("Dado 1");
+		fila.insere("Dado 2");
+		fila.insere("Dado 3");
+		fila.insere("Dado 4");
+		fila.insere("Dado 5");
 		
-		pilha.desempilha();
-		pilha.desempilha();
+		fila.remove();
+		fila.remove();
 		
-		pilha.imprimePilha();
+		fila.imprimeLista();
 		
 		/*lista.insere("Dado 1");
 		lista.insere("Dado 2");
